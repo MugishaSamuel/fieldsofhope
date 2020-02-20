@@ -1,9 +1,5 @@
 from flask import Flask, render_template,request,redirect,url_for
-from firebase_admin import firestore
-import firebase_admin
-from werkzeug.utils import secure_filename
-import os
-from firebase_admin import credentials
+
 
 app = Flask(__name__)
 
@@ -109,9 +105,3 @@ def education():
 
 # 	return redirect(url_for("children_admin"))
 
-
-
-
-if __name__ == "__main__":
-    app.debug = True
-    app.run(port=3000)
